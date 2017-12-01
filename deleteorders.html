@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<a href="logout.php">Logout</a>
+<style>
+body {
+    background-image:url(background-pattern-design-90.jpg);
+}
+</style>
+	<title>Admin Login</title>
+	<style type="text/css">
+		#ho1
+		{
+			color: red;
+			font-size: 70px;
+		}
+		#p1
+		{
+			font-size: 25px;
+			color: red;
+		}
+		#s1
+		{
+			background-color: black;
+			color: white;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body bgcolor="gray">
+<center><h1 id="ho1"></h1></center>
+<br><br>
+<script type="text/javascript">
+
+function validate1()
+		{	
+					var seatpattern=/^[0-9A-Z,]*$/;
+					var wingpattern=/^[0-9]*$/;
+					var match_idpattern=/^[0-9]*$/;
+					var z=0;
+					var x=0;
+            		var msg="";
+					var name2=document.form1.m_id2.value;
+					
+           			 if (name2 == "")
+            		{
+						msg=msg+"Please provide your seat number \n";
+             			document.form1.m_id2.focus();
+						x++;
+				
+           			 }
+					
+		
+			var name3=document.form1.m_id3.value;
+					
+           			 if (name3 == "")
+            		{
+						msg=msg+"Please provide your firstname\n";
+             			document.form1.m_id3.focus();
+						x++;
+				
+           			 }
+					 if(msg!="")
+			{
+				window.alert(msg);
+				return false;	
+			}
+			else
+			{
+				
+				return true;
+				
+			} 	           	
+          
+		}
+function validate()
+		{	
+					var seatpattern=/^[0-9A-Z,]*$/;
+					var wingpattern=/^[0-9]*$/;
+					var match_idpattern=/^[0-9]*$/;
+					var z=0;
+					var x=0;
+            		var msg="";
+					var name=document.form1.m_id1.value;
+					
+           			 if (name == "")
+            		{
+						msg=msg+"Please provide your match id\n";
+             			document.form1.m_id1.focus();
+						x++;
+				
+           			 }
+					
+		
+					
+			if(msg!="")
+			{
+				window.alert(msg);
+				return false;	
+			}
+			else
+			{
+				
+				return true;
+				
+			} 	           	
+          
+}
+</script>
+
+
+
+<form name="form1" method="POST" action="dele.php" onsubmit="return validate()">
+  <div style="background:#8E5DBF  ;height:90px;width:390px;position:absolute;left:500px;top:200px;border-radius:16px">
+<spam style="font-style:bold;font-size:25px;position:relative;left:90px;top:30px;color:white";><b>DELETE Orders</b></spam>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<center><p id="p1">Enter the ordered book which you want to enter</p></center>
+	<center><input type="text" name="m_id1"></center><br><br>
+	<center><input type="submit" value="Delete order" id="s1"></center>
+</form>
+
+
+<form name="form2" method="POST" action="update.php" onsubmit="return validate1()">
+  <div style="background:#8E5DBF ;height:90px;width:390px;position:absolute;left:500px;top:650px;border-radius:16px">
+<spam style="font-style:bold;font-size:25px;position:relative;left:90px;top:30px;color:white";><b>Update orders</b></spam>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<center><p id="p1">Enter the ordered book which you want to enter</p></center>
+	<center><input type="text" name="m_id2"></center><br><br>
+	
+	<center><p id="p1">Enter the no of copies you want to buy.</p></center>
+	<center><input type="text" name="m_id3"></center><br><br>
+	
+	<center><input type="submit" value="Update order" id="s2"></center>
+</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<script type="text/javascript">
+function myfunction() {
+var k=0,i=0,aa=0,bb=0,cc=0,dd=0;
+k=document.form1.sl.value;
+
+if(k==='0'){
+aa=parseInt(document.form1.a.value);
+bb=parseInt(document.form1.b.value);
+cc=parseInt(document.form1.c.value);
+dd=parseInt(document.form1.d.value);
+
+i=aa+bb+cc+dd;
+}
+
+else if(k==='2')
+{
+aa=parseInt(document.form1.a.value);
+bb=parseInt(document.form1.b.value);
+cc=parseInt(document.form1.c.value);
+dd=parseInt(document.form1.d.value);
+
+i=aa*bb*cc*dd;
+
+}
+
+
+document.form1.res.value=i;
+
+}
+</script>
+<body>
+
+<h1>FFCS REGISTRATION</h1>
+<hr>
+<br>
+<table border="0px">
+<form name="form1" action="" method="post">
+<tr>
+
+
+<td>Select Formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="sl">
+<option value="0">Hard cover</option>
+<option value="2">Paper cover</option>
+</select>
+</td>
+
+
+</tr>
+
+
+
+
+<tr>
+<td>A<input name = "a" type = "text" ></td>
+<td>C<input name = "c" type = "text" ></td>
+</tr>
+
+<tr>
+<td>B<input name = "b" type = "text" ></td>
+<td>D<input name = "d" type = "text" ></td>
+</tr>
+
+
+
+<tr>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<p>Formula/Result<input name="res" type="text"></p>
+
+</td>
+</tr>
+
+<tr>
+<td>
+<p><input name="enter" type="button" value="Compute" onclick="myfunction()"><br></p>
+</td>
+</tr>
+
+
+</form>
+</table
+
+</body>

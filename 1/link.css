@@ -1,0 +1,20 @@
+.lin:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+.lin:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+.lin:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.lin:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}

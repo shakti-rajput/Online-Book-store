@@ -1,0 +1,131 @@
+a.hideDisplay{
+  position: relative; /* This makes everything work.*/
+  /* Allows you to layer overlapping elements. */
+  z-index: 20; 
+  color: #000;
+  text-decoration: none
+}
+  
+a.hideDisplay:hover{
+  /* Allows you to layer overlapping elements. */
+  z-index: 30; 
+}
+
+a.hideDisplay span.showDisplayOnHover{
+  display: none
+}
+
+/* This will only display itself when the
+ * user hovers the mouse over the anchor. */
+a.hideDisplay:hover span.showDisplayOnHover{ 
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  
+  /* This sets the height of a line of text in the box. */
+  line-height: 25px;
+  
+  /* These position the box where it needs to go. */
+  top: 5px; 
+  left: 20px; 
+  
+  /* These adjust the size of the box when it appears. */
+  width: auto;
+  padding: 10px;
+  
+  border: 1px solid #666666;
+  background-color: #c0cedd; 
+  
+  /* text color */
+  color: #000000;
+  text-align: left;
+}
+
+span.showBodyOfDisplayOnHover {
+  font-size: 16px; 
+  font-weight: normal;
+  color: #444;
+  line-height: 18px; 
+}
+
+h1 { 
+  color: #000000; 
+  font-family: Georgia, "Times New Roman", serif; 
+  text-align: center;
+}
+
+/* All of the elements that start with # are used 
+ * to control the appearance of sections surrounded 
+ * by <div> tags with the specified id. */
+#wrapper {  
+  min-width: 700px;
+  text-align: center;
+  
+  /* The next two commands center the 
+   *wrapper in the middle of the browser window. */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* This sets the wrapper to use 80% of the browser window. */
+  width: 80%; 
+}
+
+#header {
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  
+  /* The header will have 20 pixels of blank space below it. */
+  padding-bottom: 20px; 
+} 
+
+#guide {
+  width: 730px;
+  font-size: 14px;
+  color: #000;
+  text-shadow: 1px 1px 1px #fff;
+  background: url(images/header-tile.png) repeat-x;
+  letter-spacing: 1px;
+  padding: 6px;
+  border: 1px #cdcdcd solid;
+  
+  /* The next four commands make rounded corners for our 
+   * header surrounded by <div> tags with the id "guide." */
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  
+  border: 1px solid #aaa;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #000000;
+}
+
+#footer { 
+  color: #000000; 
+  font-size: .60em; 
+  font-style: italic; 
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* This controls the appearance of the hyperlinks 
+ * in the footer section of the div element. */
+#footer a:link {
+  color: #000000; 
+}
+
+/* This controls the appearance of the hyperlinks that have 
+ * been visited in the footer section of the div element. */
+#footer a:visited {
+  color: #000000; 
+}

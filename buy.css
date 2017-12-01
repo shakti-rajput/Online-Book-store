@@ -1,0 +1,49 @@
+input[type=number]{
+	padding: 5px;
+	background-color: #4ED3D8;
+}
+body{
+	background-color:#0093D1;
+	font-family: verdana;
+	color: #F9E559;
+}
+.div-container{
+	border-radius: 5px;
+	background-color:#004C70;
+	padding: 15px;
+}
+input[type=button]{
+	padding: 5px;
+	border-radius: 4px;
+	
+}
+.pvalue{
+	padding: 5px;
+	border-radius: 4px;
+	margin-left: 40%;
+}
+select{
+	padding: 5px;
+	background-color: #4ED3D8;
+	border-radius: 2px;
+}
+
+.tprice{
+	padding:5px;
+`	font-size:20px;
+	background-color:#4ED3D8;
+	border: 1px solid #0ff56b;
+	width: 100px
+}
+.submit{
+	padding: 5px;
+	font-size:14px;
+	background-color: #18d5b4;
+	border: 1px solid #0ff56b;
+	width: 100px;
+	border-radius: 4px;
+	margin-left: 28%;
+}
+h2{
+	margin-left: 25%;
+}

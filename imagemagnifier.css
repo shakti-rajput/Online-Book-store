@@ -1,0 +1,10 @@
+.picbig{
+	position: absolute;
+	width:0px;
+	-webkit-transition:width 0.3s linear 0s;
+	transition:width 0.5s linear 0s;
+	z-index:10;
+}
+.pic:hover + .picbig{
+	width:130px;
+}

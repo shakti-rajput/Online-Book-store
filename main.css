@@ -1,0 +1,32 @@
+body {
+background-color: #3D809C;	
+font-family: verdana;
+}
+
+#x {
+color: #F4D00C;	
+}
+
+#y {
+color: #7CFC00;	
+}
+
+#z {
+color: #ecb952;	
+}
+
+#unam {
+font-size:25px;
+color: #EDDB12;
+}
+#e {
+background-color: #EDDB12;
+color: #F4D00C;	
+	}
+#bookd {
+background-color: #4ED3D8;
+padding:5px;
+font-size:20px;	
+border: 1px solid #0ff56b;
+width: 100px	
+}

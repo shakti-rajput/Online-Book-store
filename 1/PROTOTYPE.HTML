@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="layout.css">
+<link rel="stylesheet" type="text/css" href="style_navigation_bar.css">
+<link rel="stylesheet" type="text/css" href="form.css">
+<link rel="stylesheet" type="text/css" href="floatingbox.css">
+<link rel="stylesheet" type="text/css" href="headersearch.css">
+	<link rel="stylesheet" type="text/css" href="slide.css">
+<script src="form.js"></script> 
+
+</head>
+<body>
+	
+<div class="container">
+
+<header>
+<img src="5dd92720-ccc7-46cf-b058-0d112bd623f9[1] - Copy.jpg" style="width:150px; height:90px; float:right;"></img>
+
+<img src="Book-Desktop-Wallpapers-HD-620x395.jpg" style="width:90px; height:70px; float:left;"></img>
+
+<form>
+ <p style="color:grey; font-size:25px;"> Books <input class="shakti" type="text" name="search" placeholder="Search...."></p>
+</form>
+
+
+		
+
+
+
+
+</header>
+
+
+
+   <nav>
+<ul >
+  <li><a href="#home" style="text-decoration:none">Home</a></li>
+  <li><a href="file:///E:/New%20folder/new%20project/toptenbooks.html" style="text-decoration:none">Top 10 Books</a></li>
+ <li><a href="#" style="text-decoration:none">Authors</a></li>
+  <li class="dropdown" >
+    <a href="#" class="dropbtn" style="text-decoration:none">Publishers</a>
+    <div class="dropdown-content">
+      <a href="#" >Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li><li class="dropdown" >
+    <a href="#" class="dropbtn" style="text-decoration:none">Fiction</a>
+    <div class="dropdown-content">
+      <a href="#" >Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li><li class="dropdown" >
+    <a href="#" class="dropbtn" style="text-decoration:none">Non-Fiction</a>
+    <div class="dropdown-content">
+      <a href="#" >Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+</nav>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Aged-Inventory-Blowout-2016.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="WebNinja_Interalia_Banner-01.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Aged-Inventory-Blowout-2016.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+	<form  class='sha' action="action_page.php">
+    <label for="name">Name *&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
+    <input type="text" id="name" name="Name" placeholder="Username" autofocus> <br><br>
+
+   <label for="email">Email *&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
+  
+  <input type="email" id="email" name="email" placeholder="email_id@gmail.com"><br>
+ <br>
+
+   <label for="Telephone">Telephone *</label>
+    <input type="text" id="Telephone1" name="Telephone1" size="3" placeholder="Phone_no." maxlength="3" onkeyup="movetoNext(this, 'Telephone2')" >-<input type="text" id="Telephone2" placeholder="Phone_no." name="Telephone2" size="3" maxlength="3" onkeyup="movetoNext(this, 'Telephone3')" >-<input type="text" id="Telephone3" placeholder="Phone_no." name="Telephone3" size="3" maxlength="4">
+
+  
+ <br><label for="Regarding">Regarding&nbsp&nbsp&nbsp </label>
+  
+  <select id="Regarding" name="Regarding"> 
+     <option value="general">general</option>
+      <option value="formal">formal</option>
+ </select><br>
+  
+
+ <label for="message">Message *&nbsp&nbsp&nbsp </label>
+ 
+   <input style="padding: 40px 20px;" type="message" id="message" name="message" placeholder="Message"><br>
+<br>
+    <input type="submit" value="Submit">
+  </form>
+  
+
+  
+  
+<article>
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/amish.html">
+<img src="ati.jpg"  alt="Scion Of Ikshvaku" style="width:100px; height:200px;"><br>Scion Of Ikshvaku<br>Amish Tripathi<br>Paperback<br>Rs 164
+</a></div>
+
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/aravindadiga.html">
+<img src="21SM_adiga_jpg_2979842e.jpg" alt="Aravind Adiga" style="width:100px; height:200px;"><br>Selection Day<br>Aravind Adiga<br>Hardcover<br>Rs 389
+</a></div>
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/inferno.html">
+<img src="inferno.jpg" alt="inferno" style="width:100px; height:200px;"><br>Inferno<br>Dan Brown<br>Paperback<br>Rs 231
+</a></div>
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/davincecode.html">
+<img src="davincicode.jpg" alt="Da Vinci Code" style="width:100px; height:200px;"><br>The Da-Vinci Code<br>Dan Brown<br>Paperback<br>Rs 225
+</a></div>
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/lostsymbol.html">
+<img src="thelostsymbol.jpg" alt="The Lost Symbol" style="width:100px; height:200px;"><br>The Lost Symbol<br>Dan Browni<br>Paperback<br>Rs 230
+</a></div>
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/angelsanddemons.html">
+<img src="Angels And Demons.jpg" alt="Angels and demons" style="width:100px; height:200px;" ><br>Angels and demons<br>Dan Brown<br>Paperback<br>Rs 248
+</a></div>
+
+<div class="floating-box" >
+<a href="#">
+<img src="kane-and-abel.jpeg"  alt="kane and abel.jpeg" style="width:100px; height:200px;"><br>Kane and Abel<br>Jeffery Archer<br>Paperback<br>Rs 229
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="The Sins of the Father.jpg" alt="The Sins of the Father" style="width:100px; height:200px;"><br>The Sins of the Father<br>Jeffery Archer<br>Paperback<br>Rs 245
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="Only Time Will tell.jpg" alt="Only Time Will tell" style="width:100px; height:200px;"><br>Only Time Will tell<br>Jeffery Archer<br>Paperback<br>Rs 265
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="Best-Kept-Secret.jpg" alt="Best Kept Secret" style="width:100px; height:200px;"><br>Best Kept Secret<br>Jeffery Archer<br>Paperback<br>Rs 239
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="Five Point someone.jpg" alt="Five Point someone" style="width:100px; height:200px;"><br>Five Point someone<br>Chetan Bhagat<br>Paperback<br>Rs 123
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="half-girlfriend.jpg" alt="half-girlfriend" style="width:100px; height:200px;" ><br>Half-Girlfriend<br>Chetan Bhagat<br>Paperback<br>Rs 88
+</a></div>
+
+
+
+
+
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/immortalsofmeluha.html">
+<img src="Immortals Of Meluha.jpg"  alt="Immortals Of Meluha" style="width:100px; height:200px;"><br>Immortals Of Meluha<br>Amish Tripathi<br>Paperback<br>Rs 147
+</a></div>
+
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/secretofnagas.html">
+<img src="The Secrets Of Nagas.jpg" alt="The Secrets Of Nagas" style="width:100px; height:200px;"><br>The Secrets Of Nagas<br>Amish Tripathi<br>Paperback<br>Rs 147
+</a></div>
+<div class="floating-box" >
+<a href="file:///E:/New%20folder/new%20project/onenightatthecallcenter.html">
+<img src="One Night At The Call Centre.jpg" alt="One Night At The Call Centre" style="width:100px; height:200px;"><br>One Night At The Call Centre<br>Chetan Bhagat<br>Paperback<br>Rs 99
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="Three Mistakes Of My Life.jpg" alt="Three Mistakes Of My Life" style="width:100px; height:200px;"><br>Three Mistakes Of My Life<br>Chetan Bhagat<br>Paperback<br>Rs 107
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="Two States.jpg" alt="Two States" style="width:100px; height:200px;"><br>Two States<br>Chetan Bhagat<br>Paperback<br>Rs 122
+</a></div>
+<div class="floating-box" >
+<a href="#">
+<img src="Revolution 2020.jpg" alt="Revolution 2020" style="width:100px; height:200px;" ><br>Revolution 2020<br>Chetan Bhagat<br>Paperback<br>Rs 107
+</a></div>
+
+
+</article>
+
+
+<footer>Copyright © W3Schools.com</footer>
+
+</div>
+
+</body>
+</html>

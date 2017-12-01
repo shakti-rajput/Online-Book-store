@@ -1,0 +1,191 @@
+
+<html>
+<head>
+<a href="logout.php">Logout</a>
+<style>
+body {
+    background-image:url(background-pattern-design-90.jpg);
+}
+#ho1
+{
+			color: red;
+			font-size: 70px;
+		}
+		#p1
+		{
+			font-size: 25px;
+			color: red;
+		}
+		#s1
+		{
+			background-color: black;
+			color: white;
+			font-size: 20px;
+		}
+</style>
+	<title>Admin Login</title>
+	
+	<script type="text/javascript">
+function validate()
+		{	
+					var seatpattern=/^[0-9A-Z,]*$/;
+					var wingpattern=/^[0-9]*$/;
+					var match_idpattern=/^[0-9]*$/;
+					var z=0;
+					var x=0;
+            		var msg="";
+					var name=document.form1.m_id1.value;
+					
+           			 if (name == "")
+            		{
+						msg=msg+"Please provide the book Id \n";
+             			document.form1.m_id1.focus();
+						x++;
+				
+           			 }
+					
+		var name2=document.form1.m_id2.value;
+					
+           			 if (name2 == "")
+            		{
+						msg=msg+"Please provide the user name. \n";
+             			document.form1.m_id2.focus();
+						x++;
+				
+           			 }
+					
+		
+			
+			if(msg!="")
+			{
+				window.alert(msg);
+				return false;	
+			}
+			else
+			{
+				
+				return true;
+				
+			} 	           	
+          
+}
+
+
+
+function validate1()
+		{	
+					var seatpattern=/^[0-9A-Z,]*$/;
+					var wingpattern=/^[0-9]*$/;
+					var match_idpattern=/^[0-9]*$/;
+					var z=0;
+					var x=0;
+            		var msg="";
+					
+					var name1=document.form2.m_id.value;
+						
+           			 if (name1 == "")
+            		{
+						msg=msg+"Please provide the book Id.\n";
+             			document.form2.m_id4.focus();
+						x++;
+				
+           			 }
+						var name3=document.form2.m_id3.value;
+					
+           			 if (name3 == "")
+            		{
+						msg=msg+"Please provide Book Name\n";
+             			document.form2.m_id3.focus();
+						x++;
+				
+           			 }
+					
+					var name4=document.form2.m_id4.value;
+					
+           			 if (name4 == "")
+            		{
+						msg=msg+"Please provide Book Price\n";
+             			document.form2.m_id4.focus();
+						x++;
+				
+           			 }
+					 var name5=document.form2.m_id5.value;
+					
+           			 if (name5 == "")
+            		{
+						msg=msg+"Please provide Book Gener\n";
+             			document.form2.m_id5.focus();
+						x++;
+				
+           			 }
+					 var name6=document.form2.m_id6.value;
+					
+           			 if (name6 == "")
+            		{
+						msg=msg+"Please provide Author Name.\n";
+             			document.form2.m_id6.focus();
+						x++;
+				
+           			 }
+			
+			
+			if(msg!="")
+			{
+				window.alert(msg);
+				return false;	
+			}
+			else
+			{
+				
+				return true;
+				
+			} 	           	
+          
+}
+</script>
+
+	
+	
+</head>
+<body bgcolor="gray">
+<center><h1 id="ho1"></h1></center>
+<br><br>
+
+
+
+<form name="form1" method="POST" action="upst.php" onsubmit="return validate()">
+  <div style="background:#8E5DBF; height:90px; width:390px; position:absolute; left:500px; top:200px; border-radius:16px">
+<spam style="font-style:bold; font-size:25px; position:relative; left:90px; top:30px; color:white; "><b>Update Status</b></spam>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<center><p id="p1">Enter the ordered book which you want to enter</p></center>
+	<center><input type="text" name="m_id1"/></center><br><br>
+	<center><p id="p1">Enter the username whom you want to change the status of order</p></center>
+	<center><input type="text" name="m_id2"/></center><br><br>
+	<center><input type="submit" value="Update Status" id="s1"/></center>
+</form>
+
+<form name="form2" method="POST" action="in.php" onsubmit="return validate1()">
+  <div style="background:#8E5DBF; height:90px; width:390px; position:absolute; left:490px; top:700px; border-radius:16px">
+<spam style="font-style:bold; font-size:25px; position:relative; left:90px; top:30px; color:white;"><b>Insert Books</b></spam>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<center><p id="p1">Enter the book_Id which you want to enter</p></center>
+	<center><input type="text" name="m_id"/></center><br><br>
+	
+	<center><p id="p1">Enter the Book Name</p></center>
+	<center><input type="text" name="m_id3"/></center><br><br>
+	
+	<center><p id="p1">Enter the Book Price</p></center>
+	<center><input type="text" name="m_id4"/></center><br><br>
+	
+	<center><p id="p1">Enter the Book Gener</p></center>
+	<center><input type="text" name="m_id5"/></center><br><br>
+	
+	<center><p id="p1">Enter the Author name</p></center>
+	<center><input type="text" name="m_id6"/></center><br><br>
+	
+	<center><input type="submit" value="Insert Books" id="s1"/></center>
+</form>
+</body>
+</html>
